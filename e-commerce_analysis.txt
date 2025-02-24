@@ -94,7 +94,6 @@ With cte AS (SELECT
 				FROM cte
                 LEFT JOIN website_pageviews
                 ON cte.website_session_id = website_pageviews.website_session_id AND website_pageviews.website_pageview_id > cte.website_pageview_id;
-7. Cross-selling analysis
 CREATE TEMPORARY TABLE table_with_flagged
 SELECT 
 		website_session_id,
@@ -159,6 +158,7 @@ d.website_session_id END)+
         ORDER BY 1,2;
 --
 
+7. Cross-selling analysis
 
 WITH cte AS (SELECT 
 		orders.order_id,
