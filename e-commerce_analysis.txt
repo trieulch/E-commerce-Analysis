@@ -1,4 +1,4 @@
--- FINAL PROJECTS
+1. Show the quarterly volumne growths.
 SELECT
 		YEAR(website_sessions.created_at) AS `YEAR`,
         QUARTER(website_sessions.created_at) AS `MONTH`,
@@ -10,6 +10,7 @@ SELECT
         GROUP BY 1,2
         ORDER BY 1,2;
 -- Both quarterly sessions and orders are picking up, session_to_order
+2. Show quarterly figures in session-to-order conversion rate, revenue per order,revenue per session
 SELECT
 		YEAR(website_sessions.created_at) AS `YEAR`,
         QUARTER(website_sessions.created_at) AS `MONTH`,
@@ -27,7 +28,7 @@ SELECT
 
 -- gsearch nonbrand,bsearch nonbrand, brand search overall,organic search,direct type-in
 
-
+3. channel type quarterly orders
 SELECT 
 		CASE WHEN website_sessions.utm_source LIKE 'gsearch' AND website_sessions.utm_campaign LIKE 'nonbrand' THEN 'gsearch_nonbrand'
         WHEN website_sessions.utm_source LIKE 'bsearch' AND website_sessions.utm_campaign LIKE 'nonbrand' THEN 'bsearch_nonbrand'
@@ -41,7 +42,7 @@ SELECT
         ORDER BY 2 DESC;
 -- The sessions in paid brand is ineffective in overall because we have already bid down in the the beginning of the launch
 
-
+4. Trends for each channel type
 WITH cte AS (SELECT 
 		website_sessions.website_session_id,
         website_sessions.created_at,
@@ -63,7 +64,7 @@ WITH cte AS (SELECT
             GROUP BY 1,2;
 -- Quarter 4, 2012 we made major improvement on conversion_rates. every_channel is increasing 32% in avg
 
-
+5. Product Analysis
 SELECT
 		YEAR(created_at) AS `YEAR`,
         MONTH(created_at) AS `MONTH`,
@@ -80,7 +81,7 @@ SELECT
         GROUP BY 1,2;
         -- The trend pattern is picking up from month 1 to month 12. Every end of the year, the sales is going to increase AS P1,p2 increase at month 2 and month 12,...
 
-
+6. Conversion Funnel analysis 
 CREATE TEMPORARY TABLE table_after_products_page
 With cte AS (SELECT
 		website_pageviews.website_session_id,
@@ -93,7 +94,7 @@ With cte AS (SELECT
 				FROM cte
                 LEFT JOIN website_pageviews
                 ON cte.website_session_id = website_pageviews.website_session_id AND website_pageviews.website_pageview_id > cte.website_pageview_id;
-
+7. Cross-selling analysis
 CREATE TEMPORARY TABLE table_with_flagged
 SELECT 
 		website_session_id,
