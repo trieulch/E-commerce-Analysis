@@ -1,3 +1,15 @@
+Q1: 
+SELECT DATE_FORMAT(w_s.created_at,'%Y-%m') AS `MONTH`,
+		MIN(w_s.created_at) AS Start_date,
+		COUNT(w_s.website_session_id) AS sessions,
+        COUNT(o.order_id) AS orders
+        FROM website_sessions w_s
+        LEFT JOIN orders o ON w_s.website_session_id = o.website_session_id
+        WHERE lower(w_s.utm_source) LIKE 'gsearch' AND w_s.created_at BETWEEN DATE_SUB('2012-11-27', INTERVAL 8 MONTH) AND '2012-11-27'
+        GROUP BY DATE_FORMAT(w_s.created_at,'%Y-%m')
+        ORDER BY DATE_FORMAT(w_s.created_at,'%Y-%m');
+
+
 1. Show the quarterly volumne growths.
 SELECT
 		YEAR(website_sessions.created_at) AS `YEAR`,
