@@ -1,5 +1,5 @@
 The content for e-commerce analysis in MySQL  
-The dataset from MavenAnalytics(you can find on some published sources and its content and structure are common at all)  
+The dataset from MavenAnalytics(which you can find on some published sources) has a common content and structure.  
 The content of analysis is included all theses segment below: 
       - **Traffic Analysis & Optimization**:Identify top traffic sources, measure their conversion rates, analyze trends, and use segmentation for bidding optimization  
       - **Website Measurement & Testing**:Find the most-visited pages and top entry pages, calculate bounce rates, build conversion funnels, and analyze tests  
