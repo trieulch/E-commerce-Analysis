@@ -38,9 +38,6 @@ and margin by product, along with total sales and revenue. Note anything you not
 page, and show how the % of those sessions clicking through another page has changed over time, along with 
 a view of how conversion from /products to placing an order has improved  
 - **Q15**: We made our 4th product available as a primary product on December 05, 2014 (it was previously only a cross-sell 
-item). Could you please pull sales data since then, and show how well each product cross-sells from one another?  
-- **Q16**: In addition to telling investors about what we’ve already achieved, let’s show them that we still have plenty of 
-gas in the tank. Based on all the analysis you’ve done, could you share some recommendations and 
-opportunities for us going forward? No right or wrong answer here – I’d just like to hear your perspective  
+item). Could you please pull sales data since then, and show how well each product cross-sells from one another?    
 
 I will publish my dashboard power BI later.
