@@ -18,9 +18,9 @@ type? I want to flex our analytical muscles a little and show the board we reall
 Gsearch. Can you pull monthly trends for Gsearch, alongside monthly trends for each of our other channels?  
 - **Q5**: I’d like to tell the story of our website performance improvements over the course of the first 8 months. 
 Could you pull session to order conversion rates, by month?  
-- **Q6**: For the gsearch lander test, please estimate the revenue that test earned us.
+- **Q6**: For the gsearch lander test, please estimate the revenue that test earned us. Period: (Jun 19 – Jul 28)
 - **Q7**: For the landing page test you analyzed previously, it would be great to show a full conversion funnel from each 
-of the two pages to orders. You can use the same time period you analyzed last time (Jun 19 – Jul 28)  
+of the two pages to orders. Period: (Jun 19 – Jul 28)  
 - **Q8**: I’d love for you to quantify the impact of our billing test, as well. Please analyze the lift generated from the test 
 (Sep 10 – Nov 10), in terms of revenue per billing page session, and then pull the number of billing page sessions 
 for the past month to understand monthly impact  
