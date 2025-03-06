@@ -5,7 +5,7 @@ The content of analysis is included all theses segment below:
 > Finding Top Traffic Source:  
 ![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Traffic%20Analysis%20%26%20Optimization/Results/1_traffic_source_analysis.png)  
 > Traffic Source Conversion Rates:  
-![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Traffic%20Analysis%20%26%20Optimization/Results/2_traffic_source_analysis.png)
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Traffic%20Analysis%20%26%20Optimization/Results/2_traffic_source_analysis.png)  
 > Traffic Source Trending:  
 ![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Traffic%20Analysis%20%26%20Optimization/Results/3_traffic_source_analysis.png)  
 > Trending w/ Granualar Segments:  
