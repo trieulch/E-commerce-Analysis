@@ -58,7 +58,7 @@ Please also make a note of any periods where we made major improvements or optim
 - **Q13**: We’ve come a long way since the days of selling a single product. Let’s pull monthly trending for revenue 
 and margin by product, along with total sales and revenue. Note anything you notice about seasonality.  
 ![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/results/Q13.png)  
-- **Q14**: Let’s dive deeper into the impact of introducing new products. Please pull monthly sessions to the /products 
+**Q14**: Let’s dive deeper into the impact of introducing new products. Please pull monthly sessions to the /products 
 page, and show how the % of those sessions clicking through another page has changed over time, along with 
 a view of how conversion from /products to placing an order has improved  
 ![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/results/Q14.png)  
