@@ -66,5 +66,3 @@ a view of how conversion from /products to placing an order has improved
 - **Q15**: We made our 4th product available as a primary product on December 05, 2014 (it was previously only a cross-sell 
 item). Could you please pull sales data since then, and show how well each product cross-sells from one another?  
 ![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/results/Q15.png)  
-
-I will publish my dashboard power BI later.
