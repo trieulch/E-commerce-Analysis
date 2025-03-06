@@ -9,7 +9,7 @@ The content of analysis is included all theses segment below:
   
 Questions:
 - **Q1**: Gsearch seems to be the biggest driver of our business. Could you pull monthly trends for gsearch sessions 
-and orders so that we can showcase the growth there?
+and orders so that we can showcase the growth there?  
 ![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/results/Q1.png)
  
 - **Q2**: Next, it would be great to see a similar monthly trend for Gsearch, but this time splitting out nonbrand and 
