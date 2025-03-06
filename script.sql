@@ -1,6 +1,4 @@
--- MID COURSE PROJECT
--- PULLING THE MONTHLY TRENDS OF SESSIONS AND ORDERS TO SHOWCASE THE GROWTH
-
+-- Q1:
 SELECT 
     DATE_FORMAT(w_s.created_at, '%Y-%m') AS `MONTH`,
     MIN(w_s.created_at) AS Start_date,
@@ -17,7 +15,7 @@ GROUP BY DATE_FORMAT(w_s.created_at, '%Y-%m')
 ORDER BY DATE_FORMAT(w_s.created_at, '%Y-%m');
         
 -- The monthly trend of sessions and orders of gsearch are picking up in 8-month period. What a significant number
-
+-- Q2:
 SELECT 
     DATE_FORMAT(w_s.created_at, '%Y-%m') AS `MONTH`,
     MIN(w_s.created_at) AS Start_date,
@@ -42,7 +40,7 @@ WHERE
 GROUP BY DATE_FORMAT(w_s.created_at, '%Y-%m')
 ORDER BY DATE_FORMAT(w_s.created_at, '%Y-%m');
 -- The brands' traffic is picking up. This could be notable increasement from 5 to 383(increased by 75.6 times)
-
+-- Q3:
 SELECT 
     DATE_FORMAT(w_s.created_at, '%Y-%m') AS `MONTH`,
     MIN(w_s.created_at) AS Start_date,
@@ -69,7 +67,7 @@ GROUP BY DATE_FORMAT(w_s.created_at, '%Y-%m')
 ORDER BY DATE_FORMAT(w_s.created_at, '%Y-%m');
         
 -- The desktop_sessions is dominated than mobile_sessions. This could be an biased behavior of customers' usage or poor mobile UI/UX.
-
+-- Q4:
 SELECT 
     DATE_FORMAT(w_s.created_at, '%Y-%m') AS `MONTH`,
     MIN(w_s.created_at) AS Start_date,
@@ -96,7 +94,7 @@ GROUP BY DATE_FORMAT(w_s.created_at, '%Y-%m')
 ORDER BY DATE_FORMAT(w_s.created_at, '%Y-%m');
         
 -- The monthly sessions of gsearch is picking up and it seems a strong correlation with other channels and total sessions.
-
+-- Q5:
 SELECT 
     DATE_FORMAT(w_s.created_at, '%Y-%m') AS `MONTH`,
     MIN(w_s.created_at) AS Start_date,
@@ -116,7 +114,7 @@ GROUP BY DATE_FORMAT(w_s.created_at, '%Y-%m')
 ORDER BY DATE_FORMAT(w_s.created_at, '%Y-%m');
 -- The cvr is picking up in the 8-month period FROM 3.07% to 4.42% increased by 31.0%. What a significant figure when in intial stages.
 
-
+-- Q6:
 SELECT 
     MIN(website_pageview_id)
 FROM
@@ -165,8 +163,7 @@ WHERE
         AND LOWER(website_sessions.utm_source) LIKE 'gsearch'
         AND website_sessions.created_at < '2012-11-27'
         AND LOWER(w_p.pageview_url) LIKE '/home';
-        
-        
+
 -- the max session id of '/home' is 17145
 SELECT 
     COUNT(website_sessions.website_session_id) * 0.0088 AS incremental_orders,
@@ -181,8 +178,8 @@ WHERE
         AND website_sessions.website_session_id > 17145;
 
 -- 22972*0.0088 = 202. in 4 months we can get 202 incremental orders since 7/29. so roughly 50 orders per month.
-DROP TEMPORARY TABLE IF EXISTS metrics_table;
 
+-- Q7:
 CREATE TEMPORARY TABLE metrics_table
 SELECT website_session_id,
 		MAX(homepage) AS homepage,
@@ -282,7 +279,7 @@ WHERE
 
 -- MAX 63501
 
-
+-- Q8
 SELECT 
     'This month' AS `date`,
     pageview_each_session.pageview_url AS pageview,
@@ -326,7 +323,7 @@ GROUP BY 1 , 2
 ORDER BY 1 , 2;
 -- 22.82 FOR BILLING, 31.34 FOR BILLING-2
 -- LIFT: 8.51 FOR BILLING PAGE VIEW
-
+-- Q9
 SELECT 
     COUNT(website_session_id) AS billing_sessions_past_month
 FROM
@@ -350,6 +347,7 @@ WHERE
 GROUP BY 1 , 2
 ORDER BY 1 , 2;
 -- Both quarterly sessions and orders are picking up, session_to_order
+-- Q10
 SELECT 
     YEAR(website_sessions.created_at) AS `YEAR`,
     QUARTER(website_sessions.created_at) AS `MONTH`,
@@ -368,7 +366,7 @@ ORDER BY 1 , 2;
 -- Quarterly session_to_order is picking up from 3.04% to 7.74% nearly 154% increasement.
 -- Quarterly revenue_per_order is picking up from 49.9 to 63.7 nearly 28%
 -- Quarterly revenue_per_session is picking up from 1.51 to 4.93 nearly 200% increasement
-
+-- Q11
 SELECT 
     CASE
         WHEN
@@ -399,7 +397,7 @@ GROUP BY 1
 ORDER BY 2 DESC;
 -- The sessions in paid brand is ineffective in overall because we have already bid down in the the beginning of the launch
 
-
+-- Q12
 WITH cte AS (SELECT 
 		website_sessions.website_session_id,
         website_sessions.created_at,
@@ -421,7 +419,7 @@ WITH cte AS (SELECT
             GROUP BY 1,2;
 -- Quarter 4, 2012 we made major improvement on conversion_rates. every_channel is increasing 32% in avg
 
-
+--Q13
 SELECT 
     YEAR(created_at) AS `YEAR`,
     MONTH(created_at) AS `MONTH`,
@@ -456,7 +454,7 @@ FROM
 GROUP BY 1 , 2;
         -- The trend pattern is picking up from month 1 to month 12. Every end of the year, the sales is going to increase AS P1,p2 increase at month 2 and month 12
 
-
+--Q14
 CREATE TEMPORARY TABLE table_after_products_page
 With cte AS (SELECT
 		website_pageviews.website_session_id,
@@ -585,7 +583,7 @@ GROUP BY 1 , 2
 ORDER BY 1 , 2;
 --
 
-
+--Q15
 WITH cte AS (SELECT 
 		orders.order_id,
         orders.primary_product_id,
