@@ -2,13 +2,13 @@ The content for e-commerce analysis in MySQL
 The dataset from MavenAnalytics(which you can find on some published sources) has a common content and structure with other e-commerce datasets.
 The content of analysis is included all theses segment below:  
 - **Traffic Analysis & Optimization**: Identify top traffic sources, measure their conversion rates, analyze trends, and use segmentation for bidding optimization  
--- Finding Top Traffic Source:  
+> Finding Top Traffic Source:  
 ![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Traffic%20Analysis%20%26%20Optimization/Results/1_traffic_source_analysis.png)  
--- Traffic Source Conversion Rates:  
+> Traffic Source Conversion Rates:  
 ![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Traffic%20Analysis%20%26%20Optimization/Results/2_traffic_source_analysis.png)
--- Traffic Source Trending:  
+> Traffic Source Trending:  
 ![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Traffic%20Analysis%20%26%20Optimization/Results/3_traffic_source_analysis.png)  
--- Trending w/ Granualar Segments:  
+> Trending w/ Granualar Segments:  
 ![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Traffic%20Analysis%20%26%20Optimization/Results/4_traffic_source_analysis.png)  
 - **Website Measurement & Testing**: Find the most-visited pages and top entry pages, calculate bounce rates, build conversion funnels, and analyze tests  
 - **Channel Analysis & Optimization**: Compare marketing channels, understand relative performance, optimize a channel portfolio, and analyze trends  
