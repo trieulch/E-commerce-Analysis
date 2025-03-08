@@ -26,7 +26,17 @@ The content of analysis is included all theses segment below:
 ![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Website%20Measurement%20%26%20Testing/Results/6_website_measurement_testing.png)  
 > Analyzing Conversion Funnel Tests:  
 ![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Website%20Measurement%20%26%20Testing/Results/7_website_measurement_testing.png)  
-- **Channel Analysis & Optimization**: Compare marketing channels, understand relative performance, optimize a channel portfolio, and analyze trends  
+- **Channel Analysis & Optimization**: Compare marketing channels, understand relative performance, optimize a channel portfolio, and analyze trends
+> Analyzing Channel Portfolios:  
+![Alt text](https://github.com/trieulch/E-commerce-Analysis/blob/main/Channel%20Analysis%20%26%20Optimization/Result/1_Channel_Analysis_Optimization.png)  
+> Comparing Channel Characteristics:  
+![Alt text](https://github.com/trieulch/E-commerce-Analysis/blob/main/Channel%20Analysis%20%26%20Optimization/Result/2_Channel_Analysis_Optimization.png)  
+> Cross-Channel Bid Optimization:  
+![Alt text](https://github.com/trieulch/E-commerce-Analysis/blob/main/Channel%20Analysis%20%26%20Optimization/Result/3_Channel_Analysis_Optimization.png)  
+> Analyzing Channel Portfolio:  
+![Alt text](https://github.com/trieulch/E-commerce-Analysis/blob/main/Channel%20Analysis%20%26%20Optimization/Result/4_Channel_Analysis_Optimization.png)  
+> Analyzing Direct Traffic:  
+![Alt text](https://github.com/trieulch/E-commerce-Analysis/blob/main/Channel%20Analysis%20%26%20Optimization/Result/5_Channel_Analysis_Optimization.png)  
 - **Product-Level Analysis**: Analyze sales, build product-level conversion funnels, learn about cross-selling, and measure the impact of launching new products  
 - **User-Level Analysis**: Learn about behaviors of repeat visitors and purchasers, and compare new and repeat visitor website conversion patterns  
   
