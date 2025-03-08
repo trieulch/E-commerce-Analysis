@@ -12,6 +12,20 @@ The content of analysis is included all theses segment below:
 > Trending w/ Granualar Segments:  
 ![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Traffic%20Analysis%20%26%20Optimization/Results/4_traffic_source_analysis.png)  
 - **Website Measurement & Testing**: Find the most-visited pages and top entry pages, calculate bounce rates, build conversion funnels, and analyze tests  
+> Finding Top Website Pages:  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Website%20Measurement%20%26%20Testing/Results/1_website_measurement_testing.png)  
+> Finding Top Entry Pages:  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Website%20Measurement%20%26%20Testing/Results/2_website_measurement_testing.png)  
+> Calculating Bounced Rates:  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Website%20Measurement%20%26%20Testing/Results/3_website_measurement_testing.png)  
+> Analyzing Landing Page Tests:  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Website%20Measurement%20%26%20Testing/Results/4_website_measurement_testing.png)  
+> Landing Page Trend Analysis:  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Website%20Measurement%20%26%20Testing/Results/5_website_measurement_testing.png)  
+> Building Conversion Funnels:  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Website%20Measurement%20%26%20Testing/Results/6_website_measurement_testing.png)  
+> Analyzing Conversion Funnel Tests:  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Website%20Measurement%20%26%20Testing/Results/7_website_measurement_testing.png)  
 - **Channel Analysis & Optimization**: Compare marketing channels, understand relative performance, optimize a channel portfolio, and analyze trends  
 - **Product-Level Analysis**: Analyze sales, build product-level conversion funnels, learn about cross-selling, and measure the impact of launching new products  
 - **User-Level Analysis**: Learn about behaviors of repeat visitors and purchasers, and compare new and repeat visitor website conversion patterns  
