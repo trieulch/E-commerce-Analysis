@@ -36,8 +36,26 @@ The content of analysis is included all theses segment below:
 ![Alt text](https://github.com/trieulch/E-commerce-Analysis/blob/main/Channel%20Analysis%20%26%20Optimization/Result/4_Channel_Analysis_Optimization.png)  
 > Analyzing Direct Traffic:  
 ![Alt text](https://github.com/trieulch/E-commerce-Analysis/blob/main/Channel%20Analysis%20%26%20Optimization/Result/5_Channel_Analysis_Optimization.png)  
-- **Business Patterns and Seasonality Analysis**: Analyzing business patterns and seasonality  
+- **Business Patterns and Seasonality Analysis**: Analyzing business patterns and seasonality
+> Analyzing Seasonality:  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Business%20Patterns%20and%20Seasonality%20Analysis/Result/1_Business_Patterns_And_Seasonality_Analysis.png)  
+> Analyzing Business Patterns:  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Business%20Patterns%20and%20Seasonality%20Analysis/Result/2_Business_Patterns_And_Seasonality_Analysis.png)  
 - **Product-Level Analysis**: Analyze sales, build product-level conversion funnels, learn about cross-selling, and measure the impact of launching new products  
+> Product-Level Sales Analysis:  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Product%20Level%20Analysis/Results/1_Product_Level_Analysis.png)  
+> Analyzing Product Launches:  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Product%20Level%20Analysis/Results/2_Product_Level_Analysis.png)  
+> Product-Level Website Pathing:  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Product%20Level%20Analysis/Results/3_Product_Level_Analysis.png)  
+> Building Product-Level Conversion Funnels:  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Product%20Level%20Analysis/Results/4_Product_Level_Analysis.png)  
+> Cross-sell Analysis:  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Product%20Level%20Analysis/Results/5_Product_Level_Analysis.png)  
+> Product Portfolio Expansion:  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Product%20Level%20Analysis/Results/6_Product_Level_Analysis.png)  
+> Analyzing Product Refund Rates:  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Product%20Level%20Analysis/Results/7_Product_Level_Analysis.png)  
 - **User-Level Analysis**: Learn about behaviors of repeat visitors and purchasers, and compare new and repeat visitor website conversion patterns  
   
 Questions:
