@@ -62,10 +62,12 @@ The content of analysis is included all theses segment below:
 > Analyzing Time to Repeat:  
 ![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/User%20Level%20Analysis/Results/2_User_Level_Analysis.png)  
 > Analyzing Repeat Channel Behavior:  
-![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/User%20Level%20Analysis/Results/3User_Level_Analysis.png)  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/User%20Level%20Analysis/Results/3_User_Level_Analysis.png)  
 > Analyzing New & Repeat Conversion Rates:  
 ![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/User%20Level%20Analysis/Results/4_User_Level_Analysis.png)  
-Questions:  
+
+
+  Questions:  
 - **Q1**: Gsearch seems to be the biggest driver of our business. Could you pull monthly trends for gsearch sessions 
 and orders so that we can showcase the growth there?  
 ![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/results/Q1.png)  
