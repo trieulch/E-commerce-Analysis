@@ -57,8 +57,15 @@ The content of analysis is included all theses segment below:
 > Analyzing Product Refund Rates:  
 ![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Product%20Level%20Analysis/Results/7_Product_Level_Analysis.png)  
 - **User-Level Analysis**: Learn about behaviors of repeat visitors and purchasers, and compare new and repeat visitor website conversion patterns  
-  
-Questions:
+> Identifying Repeat Visitors:  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/User%20Level%20Analysis/Results/1_User_Level_Analysis.png)  
+> Analyzing Time to Repeat:  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/User%20Level%20Analysis/Results/2_User_Level_Analysis.png)  
+> Analyzing Repeat Channel Behavior:  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/User%20Level%20Analysis/Results/3User_Level_Analysis.png)  
+> Analyzing New & Repeat Conversion Rates:  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/User%20Level%20Analysis/Results/4_User_Level_Analysis.png)  
+Questions:  
 - **Q1**: Gsearch seems to be the biggest driver of our business. Could you pull monthly trends for gsearch sessions 
 and orders so that we can showcase the growth there?  
 ![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/results/Q1.png)  
