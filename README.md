@@ -38,7 +38,8 @@ The content of analysis is included all theses segment below:
 ![Alt text](https://github.com/trieulch/E-commerce-Analysis/blob/main/Channel%20Analysis%20%26%20Optimization/Result/5_Channel_Analysis_Optimization.png)  
 - **Business Patterns and Seasonality Analysis**: Analyzing business patterns and seasonality
 > Analyzing Seasonality:  
-![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Business%20Patterns%20and%20Seasonality%20Analysis/Result/1_Business_Patterns_And_Seasonality_Analysis.png)  
+![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Business%20Patterns%20and%20Seasonality%20Analysis/Result/1_Business_Patterns_And_Seasonality_Analysis.png)
+> ![Weekly Website Sessions](https://github.com/trieulch/E-commerce-Analysis/blob/main/Business%20Patterns%20and%20Seasonality%20Analysis/sessions_by_week.png?raw=true)
 > Analyzing Business Patterns:  
 ![Alt text](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Business%20Patterns%20and%20Seasonality%20Analysis/Result/2_Business_Patterns_And_Seasonality_Analysis.png)
 ![Sessions Heatmap](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/main/Business%20Patterns%20and%20Seasonality%20Analysis/Heatmap_sesions_by_hour_day.png)- **Product-Level Analysis**: Analyze sales, build product-level conversion funnels, learn about cross-selling, and measure the impact of launching new products  
