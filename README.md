@@ -231,4 +231,3 @@ Business Intelligence
 # Author
 
 Lê Chí Hoàng Triều  
-Data Analyst Portfolio
