@@ -40,13 +40,13 @@ Identify acquisition channels, conversion efficiency, and growth trends.
 ### Top Traffic Sources
 ![Traffic Source](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Traffic%20Analysis%20%26%20Optimization/Results/1_traffic_source_analysis.png)
 
-### Conversion Rates by Traffic Source
+### Conversion Rates by Top Traffic Source
 ![Conversion](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Traffic%20Analysis%20%26%20Optimization/Results/2_traffic_source_analysis.png)
 
-### Traffic Trends Over Time
+### Traffic Analysis for the Product Launch Period
 ![Trend](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Traffic%20Analysis%20%26%20Optimization/Results/3_traffic_source_analysis.png)
 
-### Traffic Trends by Segment
+### Traffic Analysis & Conversion Rate by Segment
 ![Segment](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Traffic%20Analysis%20%26%20Optimization/Results/4_traffic_source_analysis.png)
 
 ---
