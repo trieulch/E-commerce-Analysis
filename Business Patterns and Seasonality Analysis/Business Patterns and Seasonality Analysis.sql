@@ -1,7 +1,8 @@
 SELECT YEAR(website_sessions.created_at) AS `YEAR`,
 		YEARWEEK(website_sessions.created_at) AS `WEEK`,
         COUNT(website_sessions.website_session_id) AS sessions,
-        COUNT(orders.order_id) AS orders FROM website_sessions
+        COUNT(orders.order_id) AS orders,
+         COUNT(orders.order_id)/COUNT(website_sessions.website_session_id) AS cvr FROM website_sessions
         LEFT JOIN orders ON website_sessions.website_session_id = orders.website_session_id
         GROUP BY 1,2
         ORDER BY 1,2 ASC;
