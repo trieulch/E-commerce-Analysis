@@ -25,13 +25,13 @@ SELECT utm_source,
         
 SELECT YEARWEEK(created_at) AS `WEEK`,
 		COUNT(DISTINCT CASE WHEN lower(device_type) LIKE 'mobile' AND lower(utm_source) LIKE 'gsearch' THEN website_session_id ELSE NULL END) AS mobile_gsearch_sessions,
-		COUNT(DISTINCT CASE WHEN lower(device_type) LIKE 'desktop' AND lower(utm_source) LIKE 'gsearch' THEN website_session_id ELSE NULL END) AS desktop_gsearch_sessions,
         COUNT(DISTINCT CASE WHEN lower(device_type) LIKE 'mobile' AND lower(utm_source) LIKE 'bsearch' THEN website_session_id ELSE NULL END) AS mobile_bsearch_sessions,
+		COUNT(DISTINCT CASE WHEN lower(device_type) LIKE 'mobile' AND lower(utm_source) LIKE 'bsearch' THEN website_session_id ELSE NULL END)/COUNT(DISTINCT CASE WHEN lower(device_type) LIKE 'mobile' AND lower(utm_source) LIKE 'gsearch' THEN website_session_id ELSE NULL END) AS pct_mobile,
+        COUNT(DISTINCT CASE WHEN lower(device_type) LIKE 'desktop' AND lower(utm_source) LIKE 'gsearch' THEN website_session_id ELSE NULL END) AS desktop_gsearch_sessions,
 		COUNT(DISTINCT CASE WHEN lower(device_type) LIKE 'desktop' AND lower(utm_source) LIKE 'bsearch' THEN website_session_id ELSE NULL END) AS desktop_bsearch_sessions,
-        COUNT(DISTINCT CASE WHEN lower(device_type) LIKE 'mobile' AND lower(utm_source) LIKE 'bsearch' THEN website_session_id ELSE NULL END)/COUNT(DISTINCT CASE WHEN lower(device_type) LIKE 'mobile' AND lower(utm_source) LIKE 'gsearch' THEN website_session_id ELSE NULL END) AS pct_mobile,
         COUNT(DISTINCT CASE WHEN lower(device_type) LIKE 'desktop' AND lower(utm_source) LIKE 'bsearch' THEN website_session_id ELSE NULL END)/COUNT(DISTINCT CASE WHEN lower(device_type) LIKE 'desktop' AND lower(utm_source) LIKE 'gsearch' THEN website_session_id ELSE NULL END) AS pct_desktop
         FROM website_sessions
-        WHERE created_at BETWEEN '2012-12-02' AND '2012-12-22' AND lower(utm_campaign) LIKE 'nonbrand'
+        WHERE created_at BETWEEN '2012-11-04' AND '2012-12-22' AND lower(utm_campaign) LIKE 'nonbrand'
         GROUP BY 1
         ORDER BY 1;
         
@@ -42,6 +42,7 @@ SELECT YEAR(created_at) AS `Year`,
         COUNT(DISTINCT CASE WHEN channel_types LIKE 'paid_brand_search' THEN website_session_id END)/COUNT(DISTINCT CASE WHEN channel_types LIKE 'nonbrand' THEN website_session_id END) AS brand_pct_of_nonbrand,
 		COUNT(DISTINCT CASE WHEN channel_types LIKE 'direct type in' THEN website_session_id END) AS direct_type_in,
         COUNT(DISTINCT CASE WHEN channel_types LIKE 'direct type in' THEN website_session_id END)/COUNT(DISTINCT CASE WHEN channel_types LIKE 'nonbrand' THEN website_session_id END) AS direct_pct_of_nonbrand,
+        COUNT(DISTINCT CASE WHEN channel_types LIKE 'gsearch_organic' THEN website_session_id END)+COUNT(DISTINCT CASE WHEN channel_types LIKE 'bsearch_organic' THEN website_session_id END) AS organic,
         (COUNT(DISTINCT CASE WHEN channel_types LIKE 'gsearch_organic' THEN website_session_id END)+COUNT(DISTINCT CASE WHEN channel_types LIKE 'bsearch_organic' THEN website_session_id END))/
         COUNT(DISTINCT CASE WHEN channel_types LIKE 'nonbrand' THEN website_session_id END) AS organic_pct_of_nonbrand
         FROM
