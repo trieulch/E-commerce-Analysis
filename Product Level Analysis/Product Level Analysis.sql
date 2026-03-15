@@ -3,8 +3,7 @@ SELECT YEAR(created_at) AS `YEAR`
 		MIN(created_at) AS start_date,
 		COUNT(order_id) AS sales,
 		SUM(price_usd*items_purchased) AS total_revenue,
-        SUM((price_usd-cogs_usd)*items_purchased) AS total_margin,
-        SUM(price_usd*items_purchased)/COUNT(order_id) AS Average_orders_value FROM orders
+        SUM((price_usd-cogs_usd)*items_purchased) AS total_margin FROM orders
         WHERE created_at < '2013-01-04'
         GROUP BY 1,2
         ORDER BY 1,2 ASC;
@@ -114,8 +113,8 @@ DROP TEMPORARY TABLE IF EXISTS table_after_cartpage;
 CREATE TEMPORARY TABLE table_after_cartpage
 WITH CTE AS(
 SELECT CASE WHEN
-		created_at < '2013-09-25' THEN 'A.Pre'
-        ELSE 'B.Post' END AS time_period,
+		created_at < '2013-09-25' THEN 'A.Pre_Cross_Sell'
+        ELSE 'B.Post_Cross_Sell' END AS time_period,
 		website_session_id,
         website_pageview_id,
         pageview_url
@@ -144,8 +143,8 @@ SELECT
 --
 WITH cte AS(SELECT 
 		CASE
-			WHEN website_pageviews.created_at < '2013-12-12' THEN 'A.Pre_new_product'
-            WHEN website_pageviews.created_at >= '2013-12-12' THEN 'B.Post_new_product'
+			WHEN website_pageviews.created_at < '2013-12-12' THEN 'A.Pre_birthday_product'
+            WHEN website_pageviews.created_at >= '2013-12-12' THEN 'B.Post_birthday_product'
             ELSE 'Check the logic again' END AS Time_period,
 		website_pageviews.website_session_id,
 		orders.order_id,
