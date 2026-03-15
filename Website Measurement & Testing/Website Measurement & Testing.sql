@@ -1,3 +1,5 @@
+
+USE mavenfuzzyfactory;
 SELECT
 		pageview_url,
         COUNT(DISTINCT website_session_id) AS `session` FROM website_pageviews
@@ -32,7 +34,8 @@ WITH CTE AS (
                 FROM CTE JOIN website_pageviews ON CTE.min_website_pv = website_pageviews.website_pageview_id;
 CREATE TEMPORARY TABLE table_w_bounced_sessions
 SELECT
-		table_w_landing_page.website_session_id
+		table_w_landing_page
+        .website_session_id
         FROM table_w_landing_page JOIN website_pageviews ON table_w_landing_page.website_session_id = website_pageviews.website_session_id
         GROUP BY 1
         HAVING COUNT(website_pageview_id) = 1;
@@ -113,7 +116,7 @@ FROM
 GROUP BY 
     YEARWEEK(created_at);
 -- We fully switched to the new landing page, our bounced rate comes down over time.
-
+USE mavenfuzzyfactory;
 CREATE TEMPORARY TABLE Mutually_exclusively_table_for_conversion_funnel
 SELECT sessions,
 		MAX(home_page) AS home_page,
@@ -145,10 +148,9 @@ WHERE
         AND w_s.utm_source = 'gsearch' AND w_s.utm_campaign = 'nonbrand'
 ORDER BY w_s.website_session_id) AS matrix_page_table
 GROUP BY sessions;
-
         
 SELECT COUNT(DISTINCT sessions) AS sessions,
-        COUNT(CASE WHEN product_page = 1 THEN sessions ELSE NULL END)/COUNT(CASE WHEN lander_1_page = 1 THEN sessions ELSE NULL END) AS lander_1_clickthrough_rate,
+        COUNT(CASE WHEN product_page = 1  THEN sessions ELSE NULL END)/COUNT(CASE WHEN lander_1_page = 1 OR home_page = 1 THEN sessions ELSE NULL END) AS lander_1_clickthrough_rate,
         COUNT(CASE WHEN mrfuzzy_page = 1 THEN sessions ELSE NULL END)/COUNT(CASE WHEN product_page = 1 THEN sessions ELSE NULL END) AS product_clickthrough_rate,
 		COUNT(CASE WHEN cart_page = 1 THEN sessions ELSE NULL END)/COUNT(CASE WHEN mrfuzzy_page = 1 THEN sessions ELSE NULL END) AS mrfuzzy_clickthrough_rate,
 		COUNT(CASE WHEN shipping_page = 1 THEN sessions ELSE NULL END)/COUNT(CASE WHEN cart_page = 1 THEN sessions ELSE NULL END) AS cart_clickthrough_rate,
