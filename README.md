@@ -67,9 +67,14 @@ The conversion rate of **gsearch / nonbrand** is **2.96%**, which is below the *
 
 ![Device Performance](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Traffic%20Analysis%20%26%20Optimization/Results/5_traffic_source_analysis.png)
 
-Traffic source performance broken down by device shows that **desktop devices generate significantly higher value**, with **conversion per action = 53.62**.
+Breaking gsearch / nonbrand performance down by device shows a large gap:
 
-Therefore, reallocating more marketing budget toward **desktop traffic** may improve marketing efficiency.
+| Device | Conversion rate | CPA (cost per order) |
+|---|---|---|
+| Desktop | **3.73%** | **$53.62** |
+| Mobile | 0.96% | $208.33 |
+
+Desktop acquires an order at roughly **1/4 of the mobile cost**. Reallocating bid budget toward **desktop traffic** should improve marketing efficiency.
 
 ---
 
@@ -77,7 +82,7 @@ Therefore, reallocating more marketing budget toward **desktop traffic** may imp
 
 ![Bid Analysis](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Traffic%20Analysis%20%26%20Optimization/Results/3_traffic_source_analysis.png)
 
-Since the conversion rate threshold is **4%**, a **bid down strategy** was implemented on desktop traffic, resulting in an average **42.5% decrease in traffic volume**.
+Because gsearch / nonbrand converted below the **4%** threshold, the campaign was **bid down on 2012-04-15**. Weekly session volume fell by about **42.5%**, showing the campaign is highly sensitive to bid changes.
 
 ![Bid Launch Comparison](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/Traffic%20Analysis%20%26%20Optimization/Results/6_traffic_source_analysis.png)
 
@@ -323,20 +328,26 @@ Total users: **145,900**
 
 User distribution:
 
-- **New users:** 89.62%
-- **1 repeat purchase:** 9.65%
-- **2 repeat purchases:** 0.22%
-- **3 repeat purchases:** 3.21%
+| Repeat sessions | Users | Share |
+|---|---|---|
+| 0 (no return) | 126,813 | 86.92% |
+| 1 | 14,086 | 9.65% |
+| 2 | 315 | 0.22% |
+| 3 | 4,686 | 3.21% |
+
+About **13% of new users come back** at least once within the period.
 
 ---
 
 ![Session Duration](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/User%20Level%20Analysis/Results/2_User_Level_Analysis.png)
 
-Session duration:
+Time from a user's first session to their first repeat session:
 
-- **Min:** 1 minute
-- **Max:** 69 minutes
-- **Average:** 33.24 minutes
+- **Min:** 1 day
+- **Max:** 69 days
+- **Average:** 33.2 days
+
+Users who return typically do so about **one month** after their first visit, which suggests a natural window for retention campaigns (e.g. email reminders around day 25–30).
 
 ---
 
@@ -354,10 +365,14 @@ Repeat sessions are dominated by:
 
 ![Returning Users](https://raw.githubusercontent.com/trieulch/E-commerce-Analysis/refs/heads/main/User%20Level%20Analysis/Results/4_User_Level_Analysis.png)
 
-Returning users show **strong revenue contribution**, with:
+Returning users are more valuable than new users (2014):
 
-- Conversion rate **> 1.31%**
-- Revenue per session **≈ 0.8**
+| Session type | Conversion rate | Revenue per session |
+|---|---|---|
+| New | 6.80% | $4.34 |
+| Repeat | **8.11%** | **$5.17** |
+
+Repeat sessions convert **1.31 percentage points higher** and generate **~19% more revenue per session**, and they arrive mostly through low-cost channels (direct, organic, paid brand). This supports investing in retention alongside paid acquisition.
 ---
 
 # Business Questions and Answers
